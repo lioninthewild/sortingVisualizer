@@ -10,7 +10,7 @@
 /* nav bar */
 
 nav {
-    background-color: rgb(30, 5, 119);
+    background-color: #3d5a80;
     color: yellow;
     display: -ms-grid;
     display: grid;
@@ -19,81 +19,99 @@ nav {
     -webkit-column-gap: 0 0 10%;
     column-gap: 10%;
     padding: 0%, 0%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.main-layout {
+    display: flex;
+}
+
+.side-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #98c1d9;
+    padding: 1rem;
+    margin-right: 20px;
+}
+
+.main-bars {
+    width: 99vw;
+    height: 44vh;
+    margin-right: 20px;
+    background-color: antiquewhite;
+}
+
+.sec {
+    display: flex;
+    flex-direction: column;
 }
 
 
 /* array input inside nav bar*/
 
 .array-inputs {
-    flex-wrap: wrap;
+    padding-bottom: 2rem;
+    padding-top: 1.5rem;
 }
 
 #a_size {
     padding: 1% 0%;
+    cursor: pointer;
 }
 
 #a_speed {
     padding: 1% 0%;
+    cursor: pointer;
 }
 
 #a_generate {
     background-color: transparent;
-    padding: 1% 0% 0% 2%;
+    padding: 2% 5% 0% 0%;
     border: none;
     outline: none;
-    color: white;
+    color: #ffb100;
 }
 
 
 /* generate new array hover */
 
 #a_generate:hover {
-    color: #38ff10;
-    text-shadow: 0 0 10px #38ff10;
+    color: red;
+    cursor: pointer;
 }
 
-
-/* right side of the nav bar */
-
-.header_right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: block;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+.nav-head {
+    display: flex;
+    justify-content: center;
 }
 
 .nav-heading {
-    display: inline-block;
+    padding: 1rem 0.5rem;
     font-size: xx-large;
-    padding: 3% 3%;
 }
 
 .algos {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (20%);
-    grid-template-columns: repeat(5, 20%);
-    place-content: center;
-    padding: 2% 0%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
 }
 
 .algos button {
     background-color: transparent;
     border: none;
-    color: white;
+    color: #55e3dc;
     outline: none;
-    padding: 2% 0%;
+    padding: 0.2rem 0%;
     font-size: large;
+    margin-top: 0.7rem;
 }
 
 
 /* algos button hover */
 
 .algos button:hover {
-    color: crimson;
+    color: #d1d7dd;
     text-shadow: 0 0 10px crimson;
     cursor: pointer;
 }
@@ -156,8 +174,15 @@ section {
     text-transform: none;
 }
 
+.info_cont {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    background-color: #3d5a80;
+}
+
 #Info_Cont1 {
-    padding: 20% 10%;
+    padding: 1rem 1rem;
 }
 
 #Info_Cont1 h3 {
@@ -169,11 +194,11 @@ section {
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    height: 70vh;
+    height: 50vh;
 }
 
 section #Info_Cont2 {
-    padding: 20% 10%;
+    padding: 1rem 1rem;
 }
 
 section #Info_Cont2 h3 {
@@ -182,4 +207,13 @@ section #Info_Cont2 h3 {
 
 .hide {
     display: none;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+    color: yellow;
+    background-color: #3d5a80;
+    padding-top: 0 0.8rem;
 }
